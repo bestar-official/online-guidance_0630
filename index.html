@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<meta name="viewport" content="width=device-width">
+
+		<meta name="description" content="6/30開催! オンライン就活フェアのページです。">
+		<meta name="keywords" content="学内ガイダンス,美容学生,サロン">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>6/30 オンライン就活フェア</title>
+		<style type="text/css"></style>
+
+		<!-- <script type="text/javascript">
+		function check_number(){
+			if(form2.free_word2.value.match(/^[0-9]+$/)){
+			alert(form2.free_word2.value);}
+			else{alert("error!");}
+		}
+		</script> -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<table width="100%" cellspacing="0" cellpadding="0" style="border:0px solid blue;" bgcolor="white" align="center">
+			<header>
+				<img class="logo" src="./images/logo.jpg" alt="online_guidence_logo">
+			</header>
+			<div class="mainview">
+                <div class="description_part">
+                    <img class="online_guidence" src="./images/title.jpg" alt="title">
+                    <a href="https://aura-mico.jp/qr-codes/5981/preview">
+                        <img class="event" src="./images/event1.jpg" alt="event1">
+                    </a>
+                </div>
+
+                <img class="salon" src="./images/salon.jpg" alt="サロン一覧">
+                
+                <!-- アルバム  -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/ALBUM.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.album-hair.com/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- Ash  -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/Ash.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://ash-hair.com/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- atelier-MAI -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/atelier-MAI.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="http://www.ateliermai.or.tv/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- aderance -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/aderance.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.aderans.co.jp/news/detail/190411_01.html">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- Wiz -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/Wiz.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.r-wiz.com/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- ORANGE POP -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/ORANGE POP.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.orangepop.net/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- CRAFT -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/CRAFT.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.total-beauty-craft.com/company">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- KENJE -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/KENJE.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.kenji-group.co.jp/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- ciel -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/ciel.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="https://zoom.us/j/96647471901?pwd=NkRXMmdJVEI2UmRNU2RWL3kwR3hMdz09">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="http://www.net-ciel.com/salon">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- tiptop -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/tiptop.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.tiptop-jp.com/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- TRUTH -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/TRUTH.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="http://www.truth-style.com/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- DAY BY DAY -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/DAY BY DAY.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://daybyday.co.jp/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- bamboo -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/bamboo.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="http://www.bamboo-c.co.jp/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- PROGRESS -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/PROGRESS.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.hairwork-progress.jp/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- rachyokka -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/rachyokka.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="http://www.laciocca.jp/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+				</div>
+
+				<!-- le jardin -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/le jardin.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.ljd.jp/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+                </div>
+
+                <!-- Refuge -->
+				<div class="exhibitor">
+					<div class="format_part">
+						<img class="format" src="./images/Refuge.jpg" alt="format">
+					</div>
+					<div class="bottom_part">
+						<a href="">
+							<img class="zoom" src="./images/ZOOM.jpg" alt="zoom">
+						</a>
+						<a href="https://www.refuge-hair.com/">
+							<img class="hp" src="./images/HP.jpg" alt="hp">
+						</a>
+					</div>
+                </div>
+
+                <a href="https://aura-mico.jp/qr-codes/5981/preview">
+                    <img class="event" src="./images/event2.jpg" alt="event1">
+                </a>	
+            </div>
+            <footer>
+                <img class="links" src="./images/link.jpg" alt="links_logo">
+                <a href="https://www.instagram.com/bestar_official_/">
+                    <img class="insta" src="./images/insta.jpg" alt="insta">
+                </a>
+                <img class="last" src="./images/last.jpg" alt="last">
+			</footer>
+		</table>
+	</body>
+</html>

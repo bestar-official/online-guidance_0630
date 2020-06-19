@@ -1,0 +1,59 @@
+img { 
+    max-width:100%; 
+    height:auto; 
+}
+
+.logo {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+}
+
+.online_guidence {
+    width: 100%;
+}
+
+.event {
+    width: 100%;
+}
+
+.exhibitor {
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.format {
+    width: 73.5%;
+    float: left;
+}
+
+.bottom_part {
+    width: 24.5%;
+    float: right;
+    margin-left: 3px;
+}
+
+.zoom {
+    width: 92%;
+    /* height: 72px; */
+
+}
+
+.hp {
+    width: 92%;
+    /* height: 72px; */
+}
+
+.links {
+    width: 100%;
+}
+
+.insta {
+    width: 100%;
+}
+
+.last {
+    width: 100%;
+}
