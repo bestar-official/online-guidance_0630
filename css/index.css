@@ -7,8 +7,19 @@ img {
     width: 100%;
 }
 
+.description_part {
+    position: relative;
+}
+
 .title {
     width: 100%;
+}
+
+.login {
+    position: absolute;
+    width: 85%;
+    top: 56.5%;
+    left: 9%;
 }
 
 .online_guidence {
